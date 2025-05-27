@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#E8E2E2" /> <!-- Warna abu-abu muda untuk latar avatar -->
+    <stroke android:width="2dp" android:color="#B0B0B0" /> <!-- Border abu-abu -->
+</shape>

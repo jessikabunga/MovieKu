@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FEFEFE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Film"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Upload gambar -->
+        <ImageView
+            android:id="@+id/imageUpload"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/image_upload_border"
+            android:contentDescription="Upload Foto"
+            android:padding="24dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_file_upload_24" />
+
+        <!-- Input Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Judul"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/editteks_border"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Input Sinopsis -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sinopsis"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etSinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/editteks_border"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Input Tahun -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Tahun"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/editteks_border"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Input Durasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Durasi"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etDurasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/editteks_border"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Input Genre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Genre"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/editteks_border"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Penilaian -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Berikan Penilaian"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ulasan -->
+        <EditText
+            android:id="@+id/etUlasan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:background="@drawable/editteks_border"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"/>
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="0"
+            android:layout_marginBottom="24dp"
+            android:theme="@style/CustomRatingBarStyle" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:backgroundTint="#FFF34F"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

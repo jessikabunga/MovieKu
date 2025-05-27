@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "523924356267",
+    "firebase_url": "https://movieku-b0b6b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "movieku-b0b6b",
+    "storage_bucket": "movieku-b0b6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523924356267:android:53aa2443b9360620724bee",
+        "android_client_info": {
+          "package_name": "com.example.movieku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGOpBZQsxJ5RE6VXU_JYM37PPzuBi8xw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

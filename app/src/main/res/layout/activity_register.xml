@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FEFEFE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="48dp"/>
+
+        <!-- Nama -->
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/editteks_border"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Nama"
+            android:paddingHorizontal="24dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/editteks_border"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Email"
+            android:paddingHorizontal="24dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp" />
+
+        <!-- Kata Sandi -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/editteks_border"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:paddingHorizontal="24dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lupa kata sandi ?"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <!-- Tombol Daftar -->
+        <ImageButton
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/button_daftar"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="Tombol Daftar"/>
+
+        <!-- Divider -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="atau daftar dengan"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <!-- Button Sosial Media -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/button_akun_login"
+            android:scaleType="fitXY"/>
+
+        <!-- Sudah punya akun -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah memiliki akun?"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Masuk"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomRatingBarStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#C81AE6</item>
+        <item name="colorControlActivated">#C81AE6</item>
+    </style>
+</resources>

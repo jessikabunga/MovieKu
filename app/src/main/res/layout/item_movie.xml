@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/item_background"
+    android:layout_marginBottom="8dp">
+
+    <!-- Gambar poster -->
+    <ImageView
+        android:id="@+id/imgMovie"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:background="#CCC"
+        android:contentDescription="Movie Poster" />
+
+    <!-- Kontainer kanan untuk teks -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Judul Film"
+            android:textColor="#C81AE6"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Rating bintang -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Ulasan -->
+        <TextView
+            android:id="@+id/tvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Ulasan singkat pengguna..."
+            android:textColor="#C81AE6"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+</LinearLayout>

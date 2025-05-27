@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    android:padding="24dp">
+
+    <!-- Gambar Welcome -->
+    <ImageView
+        android:id="@+id/imgWelcome"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/welcome_image"
+        android:contentDescription="Welcome Image"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtJudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudah Nonton?\nSaatnya Review!"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/imgWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/txtDeskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ulas film favoritmu dan bantu orang lain menemukan tontonan terbaik!"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/txtJudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Tombol Masuk -->
+    <ImageView
+        android:id="@+id/btnMasuk"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/rounded_button"
+        android:contentDescription="Tombol Masuk"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/txtDeskripsi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

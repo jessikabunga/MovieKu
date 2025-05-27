@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MovieKu</string>
+    <string name="text_belum_akun">Belum memiliki akun? <b>Daftar</b></string>
+</resources>
